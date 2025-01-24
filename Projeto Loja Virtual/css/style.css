@@ -1,0 +1,105 @@
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5c109b;
+    padding: 10px 20px;
+    position: fixed;  
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav .menu ul li {
+    margin: 0 15px;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .logo {
+    text-align: center;
+    flex: 2;  
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav .logo-right {
+    flex: 1;  
+    text-align: right;
+}
+
+nav .logo-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #5c109b;
+    color: white;
+
+}
+
+.esquerda {
+    color: #fff;
+    font-size: 14px;
+}
+
+.direita ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px; 
+    margin: 0;
+}
+
+.direita ul li {
+    margin: 0;
+}
+
+.sessão_p {
+    text-align: left; 
+    margin: 0 20px; 
+    padding: 30px;
+    line-height: 1.6;
+	max-width: 1152px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-around;   
+}

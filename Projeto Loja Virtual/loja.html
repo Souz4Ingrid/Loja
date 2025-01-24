@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voguecraft</title>
+
+
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+   
+        header {
+            background-color: #5c109b;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+     
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #450877;
+        }
+
+      
+        .container {
+            padding: 1rem;
+        }
+
+        .categoria {
+            margin-bottom: 2rem;
+        }
+
+        .carrossel {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .produtos {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .produto {
+            min-width: 200px;
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            flex-shrink: 0;
+        }
+
+        .produto img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s, opacity 0.3s ease-in-out;
+        }
+
+        .produto img:hover {
+            transform: scale(1.1);
+        }
+
+        .produto .hover-img {
+            display: none;
+        }
+
+        .produto:hover .default-img {
+            display: none;
+        }
+
+        .produto:hover .hover-img {
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #5c109b;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #5c109b;
+            margin: 30px 0;
+        }
+
+      
+        button {
+            background-color: #5c109b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #450877;
+        }
+
+       
+        .botao {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: #5c109b;
+            cursor: pointer;
+            z-index: 10;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .botao.esquerda {
+            left: 10px;
+        }
+
+        .botao.direita {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="Loja.html" style="color: white; text-decoration: none;">Voguecraft</a></h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="fac.html">F.A.Q</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <a href="inicio.html">Início</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="categoria">
+            <h2>Camisas</h2>
+            <div class="carrossel">
+                <button class="botao esquerda" data-carrossel="camisas">&#9664;</button>
+                <div class="produtos" id="camisas">
+                    <div class="produto">
+                        <img src="img.html/Belongto.jpg" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Belongto2.jpg" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Belong To</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Belong To .html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Berserk1.jpg" alt="Camisa 1" class="default-img">
+                        <img src="img.html/berserk2.jpg" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Bersekr Anime</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Berserk.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Blessed1.png" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Blessed2.png" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Blessed</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Blessed.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Camiseta unissex Streetwear 1.png" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Camiseta unissex Streetwear 2.png" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Unissex Streetwear</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Unisex Streetwear.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Computaria.jpg" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Computaria2.jpg" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Meme T.I</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Computaria Meme TI.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Dream Maker 1.png" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Dream Maker 2.png" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Dream Maker</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Dream Maker.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Regata Esportiva 1.png" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Regata Esportiva 2.png" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Regata Esportiva</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Regata Esportiva.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Sword Angel Roses1.jpg" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Sword Angel Roses2.jpg" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Angel Roses</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Angel Roses.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Belongto.jpg" alt="Camisa 1" class="default-img">
+                        <img src="img.html/Belongto2.jpg" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Belong To</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Belong To .html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Berserk1.jpg" alt="Camisa 1" class="default-img">
+                        <img src="img.html/berserk2.jpg" alt="Camisa 1 Hover" class="hover-img">
+                        <h3>Anime Berserk</h3>
+                        <p>R$ 49,90</p>
+                        <a href="Purchase Berserk.html"><button>Comprar</button></a>
+                    </div>
+                </div>
+                <button class="botao direita" data-carrossel="camisas">&#9654;</button>
+            </div>
+        </div>
+        <hr>
+        <div class="categoria">
+            <h2>Calças</h2>
+            <div class="carrossel">
+                <button class="botao esquerda" data-carrossel="calcas">&#9664;</button>
+                <div class="produtos" id="calcas">
+                    <div class="produto">
+                        <img src="img.html/CARGOBRANCO1.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/CARGOBRANCO2.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Cargo Branca</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Calça Cargo Branca.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/CARGOPRETO1.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/CARGOPRETO2.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Cargo Preta</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Calça Cargo Preta.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/JEANSRETOPRETO1.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/JEANSRETOPRETO2.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Jeans</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Jeans Reto.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/JOGGER1BEGE.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/JOGGER2BEGE.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Jogger Bege</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Calça Jogger Bege.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/JOGGER1PRETO.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/JOGGER2PRETO.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Jogger Bege</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Calça Jogger Preto.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/JEANSRETO1.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/JEANSRETO2.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Jeans</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Jeans Reto.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/CARGOBRANCO1.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/CARGOBRANCO2.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Cargo Branca</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Calça Cargo Branca.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/JOGGER1BEGE.png" alt="Calça 1" class="default-img">
+                        <img src="img.html/JOGGER2BEGE.png" alt="Calça 1 Hover" class="hover-img">
+                        <h3>Calça Jogger Bege</h3>
+                        <p>R$ 69,90</p>
+                        <a href="Comprar Calça Jogger Bege.html"><button>Comprar</button></a>
+                    </div>
+                </div>
+                <button class="botao direita" data-carrossel="calcas">&#9654;</button>
+            </div>
+        </div>
+        <hr>
+        <div class="categoria">
+            <h2>Moletons</h2>
+            <div class="carrossel">
+                <button class="botao esquerda" data-carrossel="Moletons">&#9664;</button>
+                <div class="produtos" id="Moletons">
+                    <div class="produto">
+                        <img src="img.html/BLESSEDM1.png" alt="Moleton 1" class="default-img">
+                        <img src="img.html/BLESSEDM2.png" alt="Moleton 1 Hover" class="hover-img">
+                        <h3>Moleton Blessed</h3>
+                        <p>R$ 129,90</p>
+                        <a href="Comprar Moleton Blessed.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Boss1.png" alt="Moleton 1" class="default-img">
+                        <img src="img.html/Boss2.png" alt="Moleton 1 Hover" class="hover-img">
+                        <h3>Moleton Boss</h3>
+                        <p>R$ 129,90</p>
+                        <a href="Comprar Moleton Boss.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/BROOKLYN1.png" alt="Moleton 1" class="default-img">
+                        <img src="img.html/BROOKLYN2.png" alt="Moleton 1 Hover" class="hover-img">
+                        <h3>Moleton Brooklyn</h3>
+                        <p>R$ 129,90</p>
+                        <a href="Comprar Moleton Brooklyn.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/Dragon1.png" alt="Moleton 1" class="default-img">
+                        <img src="img.html/Dragon2.png" alt="Moleton 1 Hover" class="hover-img">
+                        <h3>Moleton Dragon</h3>
+                        <p>R$ 129,90</p>
+                        <a href="Comprar Moleton Dragon.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/KING1.png" alt="Moleton 1" class="default-img">
+                        <img src="img.html/KING2.png" alt="Moleton 1 Hover" class="hover-img">
+                        <h3>Moleton King</h3>
+                        <p>R$ 129,90</p>
+                        <a href="Comprar Moleton King.html"><button>Comprar</button></a>
+                    </div>
+                    <div class="produto">
+                        <img src="img.html/New York1.png" alt="Moleton 1" class="default-img">
+                        <img src="img.html/New York2.png" alt="Moleton 1 Hover" class="hover-img">
+                        <h3>Moleton New York</h3>
+                        <p>R$ 129,90</p>
+                        <a href="Comprar Moleton New york.html"><button>Comprar</button></a>
+                    </div>
+                </div>
+                <button class="botao direita" data-carrossel="Moletons">&#9654;</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Voguecraft. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const moveCarrossel = (direction, carrosselId) => {
+            const carrossel = document.getElementById(carrosselId);
+            const width = carrossel.children[0].offsetWidth + 20; 
+            let currentTransform = parseInt(getComputedStyle(carrossel).transform.split(',')[4]) || 0;
+            if (direction === 'left') {
+                currentTransform += width;
+            } else if (direction === 'right') {
+                currentTransform -= width;
+            }
+            carrossel.style.transform = `translateX(${currentTransform}px)`;
+        }
+
+        document.querySelectorAll('.botao').forEach(button => {
+            button.addEventListener('click', () => {
+                const direction = button.classList.contains('esquerda') ? 'left' : 'right';
+                const carrosselId = button.getAttribute('data-carrossel');
+                moveCarrossel(direction, carrosselId);
+            });
+        });
+    </script>
+</body>
+</html>

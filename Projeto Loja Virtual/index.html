@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="css" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="fac.html">F.A.Q</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    
+                </ul>
+            </div>
+            <div class="logo">
+                <h1>VogueCraft</h1> 
+            </div>
+            <div class="logo-right">
+                <img src="img.html/logo VogueCraft.png" alt="logo">
+            </div>
+        </nav>
+    </header>
+
+    <section class="image-gallery">
+        <div class="image-box">
+           
+            <img src="img.html/sapato 4.jpg" alt="Sapato">
+            <p>
+                Sapato 
+            </p>
+            <h1>
+               239,90 R$
+            </h1>
+        </div>
+        <div class="image-box">
+            <img src="img.html/calça 400.jpg" alt="calça">
+            <p>
+                Calça Moletom
+            </p>
+            <h1>
+                179,90 R$
+            </h1>
+        </div>
+        <div class="image-box">
+            <img src="img.html/camisa 400.jpg" alt="camisa">
+            <p>
+                Camisa Listrada
+            </p>
+            <h1>
+                89,90 R$
+            </h1>
+        </div>
+        <div class="image-box">
+            <img src="img.html/vestido 400.jpg" alt="vestido">
+            <p>
+                Vestido
+            </p>
+            
+            <h1>
+                389,90 R$
+            </h1>
+              
+        </div>
+    </section>
+
+    <section>
+
+        <div class="sessão_2">
+            
+            <p>
+                Produtos Exclusivos: Trabalhamos com uma curadoria cuidadosa para trazer itens inovadores e exclusivos para você, de diversas categorias: moda, eletrônicos, decoração, beleza, e muito mais.
+                Qualidade Garantida: Cada produto que oferecemos passa por uma rigorosa verificação de qualidade, para que você possa comprar com confiança.
+                Facilidade no Pagamento: Oferecemos múltiplas formas de pagamento, incluindo cartões de crédito, débito, e outras opções seguras para tornar sua compra mais conveniente.
+                Entrega Rápida e Segura: Trabalhamos com parceiros logísticos de confiança para garantir que seu pedido chegue no menor tempo possível, e em perfeito estado.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="esquerda"> 
+            &copy; 2024 Minha Empresa. Todos os direitos reservados.
+        </div>
+        
+        <div class="direita">   
+            <ul>
+                <li>
+                    <img src="img.html/instagram 50.png" alt="Instagram">
+                </li>
+    
+                <li>
+                    <img src="img.html/wpp 40.png" alt="Whatsapp">
+                </li>
+    
+                <li>
+                    <img src="img.html/facebook 50.png" alt="Facebook">
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<style>
+
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #5c109b;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .menu {
+    flex: 1;  
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav .menu ul li {
+    margin: 0 10px;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .logo {
+    text-align: center;
+    flex: 2;  
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav .logo-right {
+    flex: 1;  
+    text-align: right;
+}
+
+nav .logo-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #5c109b;
+    color: white;
+
+}
+
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;  
+    gap: 20px;  
+    padding: 20px;  
+    flex-wrap: wrap;  
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 22%; 
+    height: 300px;  
+    gap: 0.5px;
+    background-color: #fff;  
+    border: 2px solid #ddd;  
+    border-radius: 10px;  
+    overflow: hidden;  
+}
+
+.image-box img {
+    width: 100%; 
+    height: 70%; 
+    object-fit: cover;  
+}
+
+.sessão_2{
+    column-count: 2;
+    column-gap: 50px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5c109b;
+    padding: 10px 20px;
+    position: fixed;  
+    bottom: 0;
+    width: 100%;
+}
+
+.esquerda {
+    color: #fff;
+    font-size: 14px;
+}
+
+.direita ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px; 
+    margin: 0;
+}
+
+.direita ul li {
+    margin: 0;
+}
+
+.direita ul li img {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain;
+}
+
+
+@media (max-width: 600px) {
+    .direita ul {
+        justify-content: flex-start; 
+    }
+}
+
+
+</style>
+
+
+
+

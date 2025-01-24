@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas Especiais</title>
+    <link rel="stylesheet" href="css/style">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="fac.html">F.A.Q</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    
+
+
+                </ul>
+            </div>
+            <div class="logo">
+                <h1>VogueCraft</h1> 
+            </div>
+            <div class="logo-right">
+                <img src="img.html/logo VogueCraft.png"  alt="logo">
+            </div>
+        </nav>
+    </header>
+
+    <div class="oferta">
+        <h3>ofertas por tempo limitado</h3>
+        <h2>PROMOÇÃO BLACK FRIDAY LIMPA ESTOQUE</h2>
+    </div>
+
+    <main>
+        <div class="offers">
+        <div class="offer">
+            <img src="img.html/calcaobr.PNG" alt="Produto 1" class="product-img">
+            <h2>Produto 1</h2>
+            <p>Descrição incrível do produto.</p>
+            <p class="price">R$ 99,99 no pix</p>
+            <p class="last-price">R$ 199,99</p>
+            <p class="discount">50% off</p>
+            <button class="buy-btn">Comprar Agora</button>
+        </div>
+        <div class="offer">
+            <img src="img.html/cmscorinthia.PNG" alt="Produto 2" class="product-img">
+            <h2>Produto 2</h2>
+            <p>Oferta imperdível para você!</p>
+            <p class="price">R$ 149,99 no pix</p>
+            <p class="last-price">R$ 299,99</p>
+            <p class="discount">50% off</p>
+            <button class="buy-btn">Comprar Agora</button>
+        </div>
+        <div class="offer">
+            <div class="flexbox-ofertas">
+            <img src="img.html/regatabaska.PNG" alt="Produto 3" class="product-img">
+            <h2>Produto 3</h2>
+            <p>Qualidade garantida.</p>
+            <p class="price">R$ 199,99 no pix</p>
+            <p class="last-price">R$ 399,99</p>
+            <p class="discount">50% off</p>
+            <button class="buy-btn">Comprar Agora</button>
+        </div>
+        </div>
+
+            <div class="offer">
+                <img src="img.html/nicktec.PNG" alt="Produto 1" class="product-img">
+                <h2>Produto 4</h2>
+                <p>Descrição incrível do produto.</p>
+                <p class="price">R$ 99,99 no pix</p>
+                <p class="last-price">R$ 199,99</p>
+                <p class="discount">50% off</p>
+                <button class="buy-btn">Comprar Agora</button>
+            </div>
+            <div class="offer">
+                <img src="img.html/trnis.PNG" alt="Produto 2" class="product-img">
+                <h2>Produto 5</h2>
+                <p>Oferta imperdível para você!</p>
+                <p class="price">R$ 149,99 no pix</p>
+                <p class="last-price">R$ 299,99</p>
+                <p class="discount">50% off</p>
+                <button class="buy-btn">Comprar Agora</button>
+            </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Ofertas Especiais. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    .oferta h3 {
+        padding-left: 15%;
+        color: #5c109b88;
+    }
+    
+    .oferta h2 {
+        padding-left: 15%;
+        color: #000000;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+    
+    header {
+        background-color: #5c109b;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    nav .menu {
+        flex: 1;  
+    }
+    
+    nav .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    nav .menu ul li {
+        margin: 0 15px;
+    }
+    
+    nav .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    
+    .offers {
+        grid-template-columns: repeat(3,1fr);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .offer {
+        background-color:   white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+    }
+    
+    
+    .offer img {
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .offer h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #5c109b;
+    }
+    
+    .offer .price {
+        font-size: 1.2em;
+        font-weight: arial;
+        color: #000000;
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .offer .last-price{
+        text-decoration: line-through;
+        font-size: 1.2em;
+        font-weight: arial;
+        color: #494949;
+        display: inline;
+    }
+    
+    .offer .discount{
+        font-size: 1.2em;
+        font-weight: arial;
+        color: #006611;
+    
+    }
+    
+    .buy-btn {
+        background-color: #5c109b;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    
+    .buy-btn:hover {
+        background-color: #5c109b;
+    }
+    
+    .footer {
+        background-color: #5c109b;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    nav .logo {
+    text-align: center;
+    flex: 2;  
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav .logo-right {
+    flex: 1;  
+    text-align: right;
+}
+
+nav .logo-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+    </style>
